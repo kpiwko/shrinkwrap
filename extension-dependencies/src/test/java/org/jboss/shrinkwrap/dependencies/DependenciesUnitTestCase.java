@@ -52,7 +52,7 @@ public class DependenciesUnitTestCase
       desc.validateArchive(war).results();
 
       // it will fail here
-      war.as(ZipExporter.class).exportTo(new File("target/" + name + ".war"));
+      war.as(ZipExporter.class).exportZip(new File("target/" + name + ".war"));
    }
 
    /**
@@ -71,7 +71,7 @@ public class DependenciesUnitTestCase
       DependencyTreeDescription desc = new DependencyTreeDescription(new File("src/test/resources/dependency-trees/" + name + ".tree"));
       desc.validateArchive(war).results();
 
-      war.as(ZipExporter.class).exportTo(new File("target/" + name + ".war"));
+      war.as(ZipExporter.class).exportZip(new File("target/" + name + ".war"));
    }
 
    /**
@@ -92,7 +92,7 @@ public class DependenciesUnitTestCase
       DependencyTreeDescription desc = new DependencyTreeDescription(new File("src/test/resources/dependency-trees/" + name + ".tree"));
       desc.validateArchive(war).results();
 
-      war.as(ZipExporter.class).exportTo(new File("target/" + name + ".war"));
+      war.as(ZipExporter.class).exportZip(new File("target/" + name + ".war"));
 
    }
 
@@ -130,7 +130,7 @@ public class DependenciesUnitTestCase
       DependencyTreeDescription desc = new DependencyTreeDescription(new File("src/test/resources/dependency-trees/" + name + ".tree"));
       desc.validateArchive(war).results();
 
-      war.as(ZipExporter.class).exportTo(new File("target/" + name + ".war"));
+      war.as(ZipExporter.class).exportZip(new File("target/" + name + ".war"));
 
    }
 
@@ -151,7 +151,7 @@ public class DependenciesUnitTestCase
       DependencyTreeDescription desc = new DependencyTreeDescription(new File("src/test/resources/dependency-trees/multipleResolution.tree"));
       desc.validateArchive(war).results();
 
-      war.as(ZipExporter.class).exportTo(new File("target/" + name + ".war"));
+      war.as(ZipExporter.class).exportZip(new File("target/" + name + ".war"));
 
    }
 
@@ -173,7 +173,7 @@ public class DependenciesUnitTestCase
       DependencyTreeDescription desc = new DependencyTreeDescription(new File("src/test/resources/dependency-trees/" + name + ".tree"));
       desc.validateArchive(war).results();
 
-      war.as(ZipExporter.class).exportTo(new File("target/" + name + ".war"));
+      war.as(ZipExporter.class).exportZip(new File("target/" + name + ".war"));
 
    }
 }

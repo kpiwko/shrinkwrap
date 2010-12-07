@@ -1,6 +1,6 @@
-org.jboss.shrinkwrap:shrinkwrap-dependencies-dependency:jar:1.0.0-SNAPSHOT
-+- org.jboss.arquillian:arquillian-spi:jar:1.0.0-SNAPSHOT:compile
-|  \- org.jboss.arquillian:arquillian-api:jar:1.0.0-SNAPSHOT:compile
+org.jboss.shrinkwrap:shrinkwrap-dependencies-dependency:jar:1.0.0-alpha-11
++- org.jboss.arquillian:arquillian-spi:jar:1.0.0.Alpha4.SP4:compile
+|  \- org.jboss.arquillian:arquillian-api:jar:1.0.0.Alpha4.SP4:compile
 |     \- org.jboss.shrinkwrap:shrinkwrap-api:jar:1.0.0-alpha-11:compile
 +- org.seleniumhq.selenium:selenium:jar:2.0a5:provided
 |  +- org.seleniumhq.selenium:selenium-htmlunit-driver:jar:2.0a5:provided
@@ -38,8 +38,8 @@ org.jboss.shrinkwrap:shrinkwrap-dependencies-dependency:jar:1.0.0-SNAPSHOT
 |     \- net.java.dev.jna:jna:jar:3.2.2:provided
 +- org.slf4j:slf4j-simple:jar:1.5.10:test
 |  \- org.slf4j:slf4j-api:jar:1.5.10:test
-+- org.jboss.arquillian:arquillian-junit:jar:1.0.0-SNAPSHOT:test
-|  \- org.jboss.arquillian:arquillian-impl-base:jar:1.0.0-SNAPSHOT:test
++- org.jboss.arquillian:arquillian-junit:jar:1.0.0.Alpha4.SP4:test
+|  \- org.jboss.arquillian:arquillian-impl-base:jar:1.0.0.Alpha4.SP4:test
 |     +- org.jboss.shrinkwrap:shrinkwrap-impl-base:jar:1.0.0-alpha-11:test
 |     \- org.jboss.shrinkwrap:shrinkwrap-spi:jar:1.0.0-alpha-11:test
 +- javax.enterprise:cdi-api:jar:1.0-SP1:test

@@ -313,7 +313,7 @@ public class MavenDependencies implements DependencyBuilder<MavenDependencies>
          Collection<Archive<?>> archives = new ArrayList<Archive<?>>(files.length);
          for (File file : files)
          {
-            Archive<?> archive = ShrinkWrap.create(JavaArchive.class, file.getName()).as(ZipImporter.class).importFrom(convert(file)).as(JavaArchive.class);
+            Archive<?> archive = ShrinkWrap.create(JavaArchive.class, file.getName()).as(ZipImporter.class).importZip(convert(file)).as(JavaArchive.class);
             archives.add(archive);
          }
 

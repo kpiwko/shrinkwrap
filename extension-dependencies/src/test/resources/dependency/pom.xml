@@ -2,14 +2,13 @@
    <!--
   vi:ts=2:sw=2:expandtab:
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
    <!-- Parent -->
    <parent>
       <groupId>org.jboss.shrinkwrap</groupId>
       <artifactId>shrinkwrap-dependencies-test-parent</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0-alpha-11</version>
    </parent>
 
    <!-- Model Version -->
@@ -18,7 +17,7 @@
    <!-- Artifact Configuration -->
    <groupId>org.jboss.shrinkwrap</groupId>
    <artifactId>shrinkwrap-dependencies-dependency</artifactId>
-   <version>1.0.0-SNAPSHOT</version>
+   <version>1.0.0-alpha-11</version>
    <name>Dependencies dependency</name>
    <description>ShrinkWrap Dependencies dependency pom file</description>
    <packaging>jar</packaging>
@@ -44,7 +43,7 @@
       <dependency>
          <groupId>org.jboss.arquillian</groupId>
          <artifactId>arquillian-spi</artifactId>
-         <version>${project.version}</version>
+         <version>1.0.0.Alpha4.SP4</version>
       </dependency>
       <dependency>
          <groupId>org.seleniumhq.selenium</groupId>
@@ -81,7 +80,7 @@
       <dependency>
          <groupId>org.jboss.arquillian</groupId>
          <artifactId>arquillian-junit</artifactId>
-         <version>${project.version}</version>
+         <version>1.0.0.Alpha4.SP4</version>
          <scope>test</scope>
       </dependency>
 
@@ -109,6 +108,23 @@
 
 
    </dependencies>
+
+   <repositories>
+      <repository>
+         <id>jboss-public-repository-group</id>
+         <name>JBoss Public Repository Group</name>
+         <url>http://repository.jboss.org/nexus/content/groups/public</url>
+         <layout>default</layout>
+         <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+         </releases>
+         <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+         </snapshots>
+      </repository>
+   </repositories>
 
    <build>
    </build>
