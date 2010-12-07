@@ -70,7 +70,6 @@
     <module>impl-base</module>
     <module>spi</module>
     <module>extension-dependencies</module>
-    <module>extension-sip</module>
     <module>extension-glassfish</module>
     <module>extension-tomcat-6</module>
     <module>extension-jetty-6</module>
