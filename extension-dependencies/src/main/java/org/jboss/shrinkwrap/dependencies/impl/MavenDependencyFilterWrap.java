@@ -21,13 +21,15 @@ import java.util.List;
 
 import org.jboss.shrinkwrap.dependencies.DependencyFilter;
 import org.sonatype.aether.graph.Dependency;
+import org.sonatype.aether.repository.LocalRepository;
+import org.sonatype.aether.repository.RemoteRepository;
 
 /**
  * A wrapper which allows filters accessing internals of MavenDependencies.
  * This way interface is not polluted with getters and setters and filters can live
  * in a different package.
  * 
- * This class is intended for internal use only.
+ * This class is intended for internal/debugging use only.
  * 
  * @see MavenDependencies
  * @see DependencyFilter
@@ -49,11 +51,30 @@ public class MavenDependencyFilterWrap
    }
 
    /**
-    * A list of currently defined dependencies
+    * Returns a list of currently defined dependencies
     * @return The read-only list of dependencies defined up to this point
     */
    public List<Dependency> getDefinedDependencies()
    {
       return Collections.unmodifiableList(dependencies.dependencies);
+   }
+
+   /**
+    * Returns a list of currently defined remote repositories
+    * @return The read-only list of remote repositories defined up to this point
+    */
+   public List<RemoteRepository> getRemoteRepositories()
+   {
+      return Collections.unmodifiableList(dependencies.system.getRemoteRepositories());
+   }
+
+   /**
+    * Returns a copy of local repository
+    * @return The read-only local repository defined up to this point
+    */
+   public LocalRepository getLocalRepository()
+   {
+      LocalRepository original = dependencies.session.getLocalRepository();
+      return new LocalRepository(original.getBasedir(), original.getContentType());
    }
 }

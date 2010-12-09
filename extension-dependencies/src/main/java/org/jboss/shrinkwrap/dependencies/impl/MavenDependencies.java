@@ -68,14 +68,12 @@ public class MavenDependencies implements DependencyBuilder<MavenDependencies>
 
    private static final DependencyFilter<MavenDependencies> ACCEPT_ALL = new AcceptAllFilter();
 
-   private MavenRepositorySystem system;
-
-   private RepositorySystemSession session;
-
-   // these are package visible, so they can be wrapped and make visible for filters
+   // these are package visible, so they can be wrapped and make visible for filters   
    Stack<Dependency> dependencies;
    Map<ArtifactAsKey, Dependency> pomInternalDependencyManagement;
-
+   RepositorySystemSession session;
+   MavenRepositorySystem system;
+   
    /**
     * Constructs new instance of MavenDependencies
     */
