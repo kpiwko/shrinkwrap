@@ -79,7 +79,6 @@
          <groupId>org.sonatype.aether</groupId>
          <artifactId>aether-impl</artifactId>
          <version>${version.org.sonatype.aether}</version>
-         <scope>test</scope>
       </dependency>
 
 
