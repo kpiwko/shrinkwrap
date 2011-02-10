@@ -1,4 +1,4 @@
-org.jboss.shrinkwrap:shrinkwrap-dependencies-dependency:jar:1.0.0-SNAPSHOT
+org.jboss.shrinkwrap:shrinkwrap-dependencies-dependency:jar:1.0.0-rhdc
 \- org.seleniumhq.selenium:selenium:jar:2.0b1:compile
    +- junit:junit:jar:4.8.1:compile
    +- org.testng:testng:jar:5.14.1:compile

@@ -1,7 +1,7 @@
-org.jboss.shrinkwrap:shrinkwrap-extension-dependencies:jar:1.0.0-SNAPSHOT
-+- org.jboss.shrinkwrap:shrinkwrap-api:jar:1.0.0-SNAPSHOT:compile
-+- org.jboss.shrinkwrap:shrinkwrap-impl-base:jar:1.0.0-SNAPSHOT:test
-|  \- org.jboss.shrinkwrap:shrinkwrap-spi:jar:1.0.0-SNAPSHOT:test
+org.jboss.shrinkwrap:shrinkwrap-extension-dependencies:jar:1.0.0-rhdc
++- org.jboss.shrinkwrap:shrinkwrap-api:jar:1.0.0-rhdc:compile
++- org.jboss.shrinkwrap:shrinkwrap-impl-base:jar:1.0.0-rhdc:test
+|  \- org.jboss.shrinkwrap:shrinkwrap-spi:jar:1.0.0-rhdc:test
 +- junit:junit:jar:4.6:test
 +- org.sonatype.aether:aether-api:jar:1.7:compile
 +- org.sonatype.aether:aether-util:jar:1.7:compile

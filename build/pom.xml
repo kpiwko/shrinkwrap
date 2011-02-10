@@ -18,7 +18,7 @@
   <!-- Artifact Configuration -->
   <groupId>org.jboss.shrinkwrap</groupId>
   <artifactId>shrinkwrap-build</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0-rhdc</version>
   <name>ShrinkWrap Build</name>
   <description>ShrinkWrap Build Configuration</description>
   <packaging>pom</packaging>
@@ -28,7 +28,8 @@
 
     <!-- Versioning -->
     <version.junit_junit>4.6</version.junit_junit>
-
+    <jboss.releases.repo.url>file:///tmp/rdhc-repository</jboss.releases.repo.url>
+    <jboss.snapshots.repo.url>file:///tmp/rdhc-repository</jboss.snapshots.repo.url>
   </properties>
 
   <!-- SCM -->
